@@ -1,17 +1,28 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<head>
+	<title>Massively by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177843683-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-177843683-1');
+	</script>
+	<script async src="https://analytics.kvudit.com/tracker.js" data-ackee-server="https://analytics.kvudit.com" data-ackee-domain-id="16721a9f-fb5d-4da4-a367-3807c691013b"></script>
+
+</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -53,56 +64,83 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+						
+							<article class="post featured" style="text-align: left;">
 								<header class="major">
 									<span class="date">April 25, 2017</span>
 									<h2><a href="#">How I setup my own personal cloud</a></h2>
-									<pre style="text-align: left;">So I decided to repurpose my gaming PC from 10 years ago and make it my own personal server.
-<strong>Hardware:</strong>
-	CPU: AMD Phenom II X6 1055T (overclocked to 4GHZ)
-	Motherboard: ASUS Crosshair V Formula
-	GPU: AMD Radeon 7770 
-	NIC: Mellanox ConnectX-2 10Gbps SFP+
-	Storage: Samsung 840 500GB Evo SSD boot drive
-	WD Black 8TB + numerous old HDDs
-	Total Raw Storage = 15TB
-
-<strong>Operating System(s): </strong>
-	Proxmox VE type 1 hypervisor (the only available free and open source bare-metal hypervisor)
-		Ubuntu Server 20.04
-		Windows 10 (with GPU Passthrough configured for gaming)
-
-<strong>Storage Configuration:</strong>
-	2x2TB ZFS Stripe
-	3x1TB ZFS Stripe
-	1x8TB for backup
-
-<strong>Here's a list of all the services I've self hosted on the Server:</strong>
-	File Storage: Nextcloud
-	Media Streaming: Streama (Your own private Netflix!)
-	VPN: OpenVPN
-	WebServer: Apache
-	Monitoring: Grafana
-	IoT: Home Assistant installed in a LXC
-	Proxy: nginx serving as a reverse proxy for all services
-									</pre>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+								<p style="text-align: left;">
+									<!--	So I decided to repurpose my gaming PC from 10 years ago and make it my own personal server.<br> -->
+				<br>
+				<strong>Hardware:</strong>
+				<ul>
+					<li>CPU: AMD Phenom II X6 1055T (overclocked to 4GHZ)</li>
+					<li>Motherboard: ASUS Crosshair V Formulala></li>
+					<li>GPU: AMD Radeon 7770</li>
+					<li>NIC: Mellanox ConnectX-2 10Gbps SFP+</li>
+					<li>Storage: Samsung 840 500GB Evo SSD boot drive</li>
+					<li>WD Black 8TB + numerous old HDDs</li>
+					<li>Total Raw Storage = 15TB</li>
+				</ul>
+				<br>
+				<strong>Operating System(s): </strong><br>
+				<ul>
+					<li>Proxmox VE type 1 hypervisor (the only available free and open source bare-metal hypervisor)</li>
+					<li>Ubuntu Server 20.04</li>
+					<li>Windows 10 (with GPU Passthrough configured for gaming)</li>
+				</ul>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+				<br>
+				<strong>Storage Configuration:</strong><br>
+				<ul>
+					<li>2x2TB ZFS Stripe</li>
+					<li>3x1TB ZFS Stripe</li>
+					<li>1x8TB for backup</li>
+				</ul>
+
+				<br>
+				<strong>Here's a list of all the services self hosted on the Server:</strong><br>
+				<ul>
+					<li>Dashboard to access all the different services: Heimdall<span style="float: right;"><a href="http://home.kvudit.com">home.kvudit.com</a></span></li>
+					<li>File Storage: Nextcloud<span style="float: right;"><a href="https://storage.kvudit.com">storage.kvudit.com</a></span></li>
+					<li>Media Streaming: Streama (Your own private Netflix!)<span style="float: right;"><a href="https://watch.kvudit.com">watch.kvudit.com</a></span></li>
+					<li>Media Streaming(Including a music player): Emby<span style="float: right;"><a href="https://media.kvudit.com">media.kvudit.com</a></span></li>
+					<li>WebServer: Apache<span style="float: right;"><a href="https://kvudit.com">This Website</a></span></li>
+					<li>Monitoring: Grafana<span style="float: right;"><a href="https://monitor.kvudit.com">monitor.kvudit.com</a></span></li>
+					<li>IoT: Home Assistant installed in a LXC<span style="float: right;"><a href="https://control.kvudit.com">control.kvudit.com</a></span></li>
+					<li>Proxy: nginx serving as a reverse proxy for all services<span style="float: right;"><a href="https://proxy.kvudit.com">proxy.kvudit.com</a></span></li>
+					<li>Web Analytics: Ackee<span style="float: right;"><a href="http://analytics.kvudit.com">analytics.kvudit.com</a></span></li>
+					<li>Surveillance: MotionEye<span style="float: right;"><a href="http://camera.kvudit.com">camera.kvudit.com</a></span></li>
+					<li>Server Management: Cockpit <span style="float: right;"><a href="http://cockpit.kvudit.com">cockpit.kvudit.com</a></span></li>
+					
+					<li>VPN: OpenVPN</li>
+				</ul>
+
+
+			</p>
+
+			<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+			<ul class="actions special">
+				<li><a href="#" class="button large">Full Story</a></li>
+			</ul>
+		</article>
+
+
+	<!-- Posts -->
+									<section class="posts">
+										<article>
+											<header>
+												<span class="date">April 24, 2017</span>
+												<h2>
+													<a href="#">
+														Sed magna<br />
+														ipsum faucibus
+													</a>
+												</h2>
+											</header>
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
